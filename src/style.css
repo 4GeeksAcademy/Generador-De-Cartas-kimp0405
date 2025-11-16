@@ -1,5 +1,92 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
-    background: green;
+body {
+  background-image: url("https://img.freepik.com/vector-premium/fondo-mesa-poquer-color-verde-fondo-palos-cartas-fondo-premium-mesa-poquer_511290-24.jpg");
+}
+
+.body-carta {
+  border-radius: 15px;
+  width: 4rem;   
+  height: 10rem; 
+  padding: 0px;
+  font-family: "Cinzel", serif;
+}
+
+.item-top {
+  margin: 10px;
+  font-size: 55px;
+  line-height: 1;
+}
+
+.item-center {
+  font-size: 70px;
+  line-height: 1;
+}
+
+.item-bottom {
+  margin: 10px;
+  font-size: 55px;
+  line-height: 1;
+  transform: rotate(180deg);
+}
+
+.carta-back {
+  background-image: url('https://img.freepik.com/vector-premium/skull-backdrop-naipes02_625341-2044.jpg?semt=ais_hybrid&w=740&q=80');
+  background-size: cover;
+  background-position: center;
+}
+
+.carta-oculta p {
+  display: none !important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&display=swap');
+
+.jbond-text {
+  font-family: "Cinzel", serif;
+  letter-spacing: 4px;
+}
+
+.jumbotron-007 {
+  background-image: url(""),
+                    linear-gradient(to bottom right, #000000d0, #111111f0);
+  background-blend-mode: overlay;
+  background-size: 200px;
+  border-radius: 20px;
+  border: 2px solid rgba(255,255,255,0.2);
+  box-shadow: 0 0 35px rgba(0, 255, 255, 0.25);
+}
+
+.neon-007 {
+  text-shadow: 0 0 8px #00eaff, 
+               0 0 12px #00eaff, 
+               0 0 20px #00eaff;
+}
+
+.neon-border {
+  border-color: #00eaff !important;
+  box-shadow: 0 0 10px #00eaff;
+}
+
+.neon-border:hover {
+  box-shadow: 0 0 20px #00eaff, 0 0 40px #00eaff;
+  transform: scale(1.05);
+}
+
+.fade-in-007 {
+  animation: fade007 1.8s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes fade007 {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.98);
+    filter: blur(4px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
 }
